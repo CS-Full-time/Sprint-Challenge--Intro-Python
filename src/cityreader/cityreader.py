@@ -70,7 +70,7 @@ for c in cities:
 
 
 # print(cities)
-print(cities)
+# print(cities)
 
 # STRETCH GOAL!
 #
@@ -105,7 +105,7 @@ print(cities)
 
 def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
   # within will hold the cities that fall within the specified region
-  x = [city for city in cities if float(city.lat) < float(lat1) and float(city.lat) > float(lat2) and float(city.lng) < float(lon1) and float(city.lng) > float(lon2)]
+  x = [city.name for city in cities if float(city.lat) < float(lat1) and float(city.lat) > float(lat2) and float(city.lng) < float(lon1) and float(city.lng) > float(lon2)]
 
   print(x)
   within = [x]
